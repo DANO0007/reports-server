@@ -45,6 +45,26 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Ejecutar en Dev
+
+```bash
+# 1.Clonar el repositorio
+
+# 2.Instalar las dependencias
+$ npm install
+
+# 3.Clonar '.env.template', renombrar a '.env'  y completar las variables de entorno en '.env'
+
+# 4.Levantar la BDD
+$ docker compose up -d
+
+# 5.Generar el Prisma Client
+$ npx prisma generate
+
+# 6.Ejecutar proyecto
+$ npm run start:dev
+```
+
 ## Test
 
 ```bash
